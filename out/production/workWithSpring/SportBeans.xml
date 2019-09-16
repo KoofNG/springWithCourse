@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="fortuneService" class="sporting.HappyFortuneService">
+    </bean>
+
+    <bean id="cricketCoach" class="sporting.CricketCoach">
+        <property name="email" value="koofng@gmail.com"/>
+        <property name="team" value="Manchester Cricketers"/>
+    </bean>
+    <bean id="coach" class="sporting.TrackCoach">
+        <constructor-arg ref="fortuneService"/>
+    </bean>
+</beans>
