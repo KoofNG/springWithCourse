@@ -5,6 +5,7 @@
       <configuration>
         <fileset id="fileset" name="SportBeans" removed="false">
           <file>file://$MODULE_DIR$/src/sporting/SportBeans.xml</file>
+          <file>file://$MODULE_DIR$/src/BeansAnnotationFIles.xml</file>
         </fileset>
       </configuration>
     </facet>
